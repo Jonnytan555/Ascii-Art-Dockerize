@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Art of the Ascii</title>
+<link rel="stylesheet" href="/css/mystyle.css">
+<meta charset="UTF-8">
+</head>
+<body>
+
+<h1>Welcome to Ascii Art</h1>
+<p>Please select banner type:</p>
+
+<form action="/ascii-art" method="POST">
+
+<div>
+<input type="radio" id="sta" name="banner" value="standard"
+checked>
+<label for="sta">Standard</label>
+</div>
+<div>
+<input type="radio" id="sha" name="banner" value="shadow">
+<label for="sha">Shadow</label>
+</div>
+<div>
+<input type="radio" id="thi" name="banner" value="thinkertoy">
+<label for="thi">Thinker Toy</label>
+</div>
+<br>
+<!-- <label for="uSt">USER STRING</label> -->
+<p>Please enter any string you'd like to see represented in ascii format:</p>
+<br>
+<textarea id="uSt" name="uString" rows="4" cols="50" placeholder="Please enter a string"></textarea>
+<br>
+<button>Submit your word now please!</button>
+<!-- <input type="submit"> -->
+</form>
+
+
+
+
+
+
+<!-- <img class="fit-picture"
+src="https://logos-world.net/wp-content/uploads/2020/06/Tottenham-Hotspur-Logo.png"
+alt="Picture of the Spurs badge"
+height=400> -->
+</body>
+</html>

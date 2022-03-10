@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<head>
+
+<title>ARTE DELLA ASCII</title>
+
+</head>
+<body>
+
+
+<link rel="stylesheet" href="/css/mystyle.css">
+<h1>Here is your Ascii Art!</h1>
+<pre> {{.SAscii}} </pre>
+
+
+<form action="/download" method="POST">
+
+    <p>Please choose which format you'd like your download in,
+        simple text document or a word document?
+    </p>
+    
+    <div>
+<input type="radio" id="txt" name="format" value="txt"
+checked>
+<label for="txt">Text</label>
+</div>
+<div>
+<input type="radio" id="doc" name="format" value="doc">
+<label for="doc">Doc</label>
+</div>
+
+   
+    <button >Download</button>
+</form>
+
+</body>
+</html>
