@@ -1,0 +1,46 @@
+{{define "Mid"}}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="/static/stylesheets/form.css">
+  <title>ASCII Art Web Generator </title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="localhost:8080/home" class="active">Home</a>
+        <a href="localhost:8080/">Ascii Art Web Generator</a>
+    </div>
+</body>
+</html>
+<div>
+  <form method="POST" action="/ascii-art">
+      <textarea id="Input" name="Input" rows="2" cols="30"></textarea> 
+      <label>Standard</label><input name="Font" type="radio" value="standard.txt" checked="checked"/>
+      <label>Shadow</label><input name="Font" type="radio" value="shadow.txt" />
+      <label>Thinkertoy</label><input name="Font" type="radio" value="thinkertoy.txt" />
+      <input type="submit" value="submit" />
+  </form>
+</div>
+<div>
+  <style>
+    div {
+      display: block;
+      text-align: center;
+    }
+  </style>
+</div>
+<br> <br>
+<br> <br>
+<div>
+  <label for="Ascii">Your Generated Ascii Art</label>
+</div>
+<div>
+  <textarea rows="20" cols="60" wrap="off"readonly>{{.Ascii_Art_Text}}</textarea> 
+</div>
+</body>
+</html>
+
+{{end}}

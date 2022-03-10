@@ -1,0 +1,25 @@
+header {
+    justify-content: center;
+    justify
+}
+
+body {
+    min-height: 100%;
+    background-image: url("background.jpg");
+    /* linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.3)); */
+    background-blend-mode: overlay;
+    background-size:cover
+}
+.box {
+    display: grid;
+    width: 540px;
+    grid-template-columns: 150px;
+    align-items: center;
+    justify-content: space-around;
+}
+.box :first-child {
+    align-self: center;
+}
+textarea {
+    justify-content: center;
+}
